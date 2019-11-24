@@ -13,6 +13,10 @@
 		CFAC65CE238B1D1A00C3E377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAC65CD238B1D1A00C3E377 /* Assets.xcassets */; };
 		CFAC65D1238B1D1A00C3E377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAC65D0238B1D1A00C3E377 /* Preview Assets.xcassets */; };
 		CFAC65D4238B1D1A00C3E377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAC65D2238B1D1A00C3E377 /* LaunchScreen.storyboard */; };
+		CFAC65DD238B234100C3E377 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC65DC238B234100C3E377 /* NetworkManager.swift */; };
+		CFAC65DF238B24CA00C3E377 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC65DE238B24CA00C3E377 /* PostData.swift */; };
+		CFAC65E2238B2AC700C3E377 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC65E1238B2AC700C3E377 /* DetailView.swift */; };
+		CFAC65E4238B2DFB00C3E377 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC65E3238B2DFB00C3E377 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		CFAC65D0238B1D1A00C3E377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFAC65D3238B1D1A00C3E377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAC65D5238B1D1A00C3E377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAC65DC238B234100C3E377 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CFAC65DE238B24CA00C3E377 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CFAC65E1238B2AC700C3E377 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CFAC65E3238B2DFB00C3E377 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CFAC65E5238B305A00C3E377 /* H4X0R-News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4X0R-News.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +65,11 @@
 		CFAC65C6238B1D1A00C3E377 /* H4X0R-News */ = {
 			isa = PBXGroup;
 			children = (
+				CFAC65E5238B305A00C3E377 /* H4X0R-News.entitlements */,
+				CFAC65E0238B2A9600C3E377 /* Views */,
+				CFAC65DB238B232900C3E377 /* Models */,
 				CFAC65C7238B1D1A00C3E377 /* AppDelegate.swift */,
 				CFAC65C9238B1D1A00C3E377 /* SceneDelegate.swift */,
-				CFAC65CB238B1D1A00C3E377 /* ContentView.swift */,
 				CFAC65CD238B1D1A00C3E377 /* Assets.xcassets */,
 				CFAC65D2238B1D1A00C3E377 /* LaunchScreen.storyboard */,
 				CFAC65D5238B1D1A00C3E377 /* Info.plist */,
@@ -73,6 +84,25 @@
 				CFAC65D0238B1D1A00C3E377 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFAC65DB238B232900C3E377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFAC65DC238B234100C3E377 /* NetworkManager.swift */,
+				CFAC65DE238B24CA00C3E377 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFAC65E0238B2A9600C3E377 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFAC65CB238B1D1A00C3E377 /* ContentView.swift */,
+				CFAC65E1238B2AC700C3E377 /* DetailView.swift */,
+				CFAC65E3238B2DFB00C3E377 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAC65DF238B24CA00C3E377 /* PostData.swift in Sources */,
+				CFAC65E2238B2AC700C3E377 /* DetailView.swift in Sources */,
+				CFAC65DD238B234100C3E377 /* NetworkManager.swift in Sources */,
 				CFAC65C8238B1D1A00C3E377 /* AppDelegate.swift in Sources */,
 				CFAC65CA238B1D1A00C3E377 /* SceneDelegate.swift in Sources */,
 				CFAC65CC238B1D1A00C3E377 /* ContentView.swift in Sources */,
+				CFAC65E4238B2DFB00C3E377 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +318,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R-News/H4X0R-News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R-News/Preview Content\"";
 				DEVELOPMENT_TEAM = TNSM43P2F3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R-News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.javiercueto.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,17 +342,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R-News/H4X0R-News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R-News/Preview Content\"";
 				DEVELOPMENT_TEAM = TNSM43P2F3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R-News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.javiercueto.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
